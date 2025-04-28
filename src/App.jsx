@@ -42,7 +42,7 @@ function App() {
                 <h1>Previsão do Tempo
 
                     <button className="background-button" onClick={changeBackground}>
-                        <img src='../public/nuvem (1).png'/>
+                        <img src='../public/nuvem%20(1).png' />
                     </button>
 
                 </h1>
