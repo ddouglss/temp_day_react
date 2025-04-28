@@ -1,0 +1,56 @@
+.weather-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgba(12, 12, 12, 0.9);
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.max-min{
+    color: #ff6f00;
+}
+
+.item {
+    background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(237, 230, 230, 0.8));
+    border-radius: 12px;
+    padding: 15px 20px;
+    text-align: center;
+    min-width: 120px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, rgba(255,255,255,1), rgba(239, 230, 230, 0.9));
+}
+
+.days, .description {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Pequena animação para a entrada suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

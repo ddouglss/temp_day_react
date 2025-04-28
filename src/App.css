@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cal Sans', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    transition: background-image 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.princet {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.background-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.3s;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.background-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
+.background-button-img {
+    width: 30px;
+    height: 30px;
+    pointer-events: none; /* Faz o clique passar pelo ícone para o botão */
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 40px 0 20px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+input {
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    outline: none;
+    width: 500px;
+    max-width: 80%;
+    font-size: 1rem;
+}
+
+.button-buscar {
+    background: linear-gradient(to left, #f1c304, #ff9700);
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button-buscar:hover {
+    background: linear-gradient(to left, #ff9700, #f1c304);
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .background-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .background-button-img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
